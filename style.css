@@ -71,25 +71,33 @@ nav ul{
 
 ul li{
     font-family: 'Ubuntu', sans-serif;
-    padding: 0 1rem;
+   
+    margin: 0px;
     display: flex;
     align-items: center;
     font-weight: bold;
     height: 100%;
-  
-   
+    width: 60px;
+ 
 }
 
 li > a{
     text-decoration: none;
     color: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 } 
 
- ul > li:hover,  ul > li:focus{  
-    background-color: grey;
-    color: white; 
+a:hover, li:hover,  ul > li:focus{  
+    background-color: grey; 
     cursor: pointer;
+    color: white;
 }
+
+
 
 
 
