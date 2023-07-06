@@ -18,12 +18,11 @@
 
 
 
-header{
-    
+header{  
     width:100%;
     display:flex;
     flex-direction: row;
-    height:4rem;
+    height:10vh;
     
 
 }
@@ -71,7 +70,6 @@ nav ul{
 
 ul li{
     font-family: 'Ubuntu', sans-serif;
-   
     margin: 0px;
     display: flex;
     align-items: center;
