@@ -1,0 +1,199 @@
+/* import Martian Mono*/
+
+/* import Bebas Neue*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Martian Mono', monospace;
+}
+
+body{
+    background-image: linear-gradient(to right,whitesmoke,#2a9df4);
+    height: 150vh;
+}
+
+.container{
+
+    
+    height: 100%;
+    background-image: url("../images/background-cloud.png");
+    background-size: cover;
+}
+
+.header
+{
+    background-image: linear-gradient(lavender,skyblue);
+    height:10vh;
+    
+}
+
+.header > header{
+    height: 100%;
+}
+
+.nav{
+    height:100%;
+}
+
+nav{
+    height: 100%;
+}
+
+.website-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: rgba(65, 153, 225, 0.555);
+    font-weight: 900;
+    text-shadow: 1px 2px #333;
+    width:30%;
+    height: 100%;
+    border: 1px solid grey;
+}
+
+.anchor-list{
+    width: 70%;
+}
+
+.anchor-list > ul{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.nav > nav{
+    display: flex;
+}
+
+
+.anchor-list > ul > li {
+    
+    
+    height:100%;
+    width:100%;
+    list-style: none;
+    border: 1px solid grey;
+    
+    
+}
+
+li > a {
+color:#189AB4;
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+text-shadow: 2px 2px #333;
+font-family: 'Martian Mono', monospace;
+font-weight: 900;
+text-decoration: none;
+}
+
+
+li > a:hover, li > a:focus{
+    background-color: #189AB4;
+    color: white;
+    transition: 0.7s;
+}
+
+.container > main {
+    
+    height: 100vh;
+}
+
+
+
+.no-wrap{
+    white-space: nowrap;
+}
+
+.long-card{
+    margin: 1rem 0;
+    width:100%;
+    height:50vh;
+    border: 2px dashed red;
+}
+
+.cloud{
+    width: 10%;
+    height: 10%;
+}
+
+@media screen and (max-width:750px){
+    
+    .container{
+        font-size: small;
+    }
+
+    .header{
+        height: 13vh;
+    }
+
+    .nav > nav{
+        width:100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .website-name {
+        width: 100%;
+        height:60%;
+    }
+
+    .anchor-list{
+        width: 100%;
+        height: 40%;
+    }
+
+    li > a {
+        
+        border-top: none;
+    }
+}
+
+main {
+    
+}
+
+.introduction{
+    height:60vh;
+    margin: 1rem;
+}
+
+.introduction > .about-me{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border : 0.5px solid grey;
+    box-shadow: 0 4px 8px 0 #333;
+    border-radius: 5px;
+    color: #333;
+}
+
+.about-info > h1 {
+
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 0.5rem;
+    
+}
+
+.wave-emoji{
+    font-size: 5rem;
+    
+}
