@@ -17,12 +17,11 @@
 
 body{
     background-image: linear-gradient(to right,whitesmoke,#2a9df4);
-    height: 150vh;
+    background-repeat: no-repeat;
+
 }
 
 .container{
-
-    
     height: 100%;
     background-image: url("../images/background-cloud.png");
     background-size: cover;
@@ -30,20 +29,25 @@ body{
 
 .header
 {
+    position: sticky;
+    top: 0;
+    z-index: 100;
     background-image: linear-gradient(lavender,skyblue);
-    height:10vh;
-    
+    height:10vh;   
 }
 
 .header > header{
+   
     height: 100%;
 }
 
 .nav{
+   
     height:100%;
 }
 
 nav{
+   
     height: 100%;
 }
 
@@ -79,14 +83,10 @@ nav{
 
 
 .anchor-list > ul > li {
-    
-    
     height:100%;
     width:100%;
     list-style: none;
     border: 1px solid grey;
-    
-    
 }
 
 li > a {
@@ -107,11 +107,6 @@ li > a:hover, li > a:focus{
     background-color: #189AB4;
     color: white;
     transition: 0.7s;
-}
-
-.container > main {
-    
-    height: 100vh;
 }
 
 
@@ -163,10 +158,23 @@ li > a:hover, li > a:focus{
         
         border-top: none;
     } 
-}
 
-main {
-    
+    .introduction{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .introduction > .intro {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-us{
+        flex-direction: column;
+        
+    }
 }
 
 .introduction{
@@ -178,8 +186,8 @@ main {
 }
 
 .introduction > .about-me{
-    width:500px;
-    height:400px;
+    width:31rem;
+    height:25rem;
     color: #333;
 }
 .about-me img{
@@ -199,6 +207,33 @@ main {
 }
 
 .wave-emoji{
-    font-size: 5rem;
+    font-size: 5rem; 
+}
+
+
+.about-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.about-us > .about-us-image{
+    width: 30rem;
+    height: 25rem;
+}
+
+
+
+.about-us > .about-us-info  {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us > .about-us-info >p  {
+  
+    margin-top: 1rem;
     
+
 }
