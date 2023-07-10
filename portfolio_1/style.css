@@ -18,6 +18,7 @@
 body{
     background-image: linear-gradient(to right,whitesmoke,#2a9df4);
     background-repeat: no-repeat;
+    overflow-x: hidden;
 
 }
 
@@ -161,6 +162,7 @@ li > a:hover, li > a:focus{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
     }
 
     .introduction > .intro {
@@ -219,7 +221,41 @@ li > a:hover, li > a:focus{
 
 .wave-emoji{
     font-size: 5rem; 
+    display: inline-block;
+    animation: wave 3s infinite;
+    transform-origin: 70% 70%;
+    
 }
+
+.hidden-left-right {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+
+.show-left-right{
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0px);    
+}
+
+.hidden-right-left{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(+100%);
+    transition: all 1.5s;
+}
+
+.show-right-left{
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0px);
+    
+}
+
+
+
 
 
 .about-us{
@@ -287,3 +323,107 @@ li > a:hover, li > a:focus{
     border-bottom: 4px solid #219653;
     background-image: linear-gradient(whitesmoke,skyblue);
 }
+
+.tech{
+
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 2rem;
+    width: 70%;
+    margin: 4rem auto;
+
+}
+
+
+.tech-container > .tech-skill{
+   
+    width:20rem;
+    height:1rem;
+    background-color: aliceblue;
+    border-radius: 521312px;
+    border: #333 solid 1px;
+}
+
+
+.skill-level{
+    animation: progress 1.5s ease; 
+}
+
+.java > .skill-level{
+    background-image: linear-gradient(to right,skyblue,purple);
+    width: 80%;
+    height:0.899rem;
+    border-radius: 521312px;
+    
+}
+
+.cpp > .skill-level{
+    background-image: linear-gradient(to right,skyblue,purple);
+    width: 70%;
+    height:0.899rem;
+    border-radius: 521312px;
+}
+
+.html > .skill-level{
+    background-image: linear-gradient(to right,skyblue,purple);
+    width: 75%;
+    height:0.899rem;
+    border-radius: 521312px;
+}
+
+.javascript > .skill-level{
+    background-image: linear-gradient(to right,skyblue,purple);
+    width: 60%;
+    height:0.899rem;
+    border-radius: 521312px;
+}
+
+.css > .skill-level{
+    background-image: linear-gradient(to right,skyblue,purple);
+    width: 70%;
+    height:0.899rem;
+    border-radius: 521312px;
+}
+
+.kotlin > .skill-level{
+    background-image: linear-gradient(to right,skyblue,purple);
+    width: 65%;
+    height:0.899rem;
+    border-radius: 521312px;
+}
+
+@keyframes wave {
+    0% {
+      transform: rotate( 0.0deg) 
+    }
+    10% {
+      transform: rotate(14.0deg) 
+    }
+    20% {
+      transform: rotate(-8.0deg) 
+    }
+    30% {
+      transform: rotate(14.0deg) 
+    }
+    40% {
+      transform: rotate(-4.0deg) 
+    }
+    50% {
+      transform: rotate(10.0deg) 
+    }
+    60% {
+      transform: rotate( 0.0deg) 
+    }
+    100% {
+      transform: rotate( 0.0deg) 
+    }
+
+}
+
+@keyframes progress {
+    from {
+      width: 0%;
+    }
+
+}
+    
