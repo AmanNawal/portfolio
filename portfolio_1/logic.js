@@ -41,16 +41,18 @@ const observerProgressBar = new IntersectionObserver((entries) => {
 /*entries: is an array of objects that contain information about each observed element.*/
 
 function toggleEducation(element) {
-    var x = document.getElementById("edu");
-    
-    if(x.style.display === "none"){
-        x.style.display = "block";
-
-    }else{
-        x.style.display = "none";
-    }
+    let desc = element.nextElementSibling;
+    const paragraph = desc.querySelector('p');
+    const paragraphHeight = paragraph.offsetHeight;
     
  
+    if (desc.classList.contains('active')) {
+        desc.style.maxHeight = '0';
+    } else {
+        desc.style.maxHeight = `${paragraphHeight}px`;
+    }
+    desc.classList.toggle('active');
   }
+  
   
 

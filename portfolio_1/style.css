@@ -430,8 +430,12 @@ li > a:hover, li > a:focus{
 
 
 .education-card > .education-description{
-  display: block;
+  max-height: 0px;
+  overflow: hidden;
+  transition: 1s ease-in;
  
+}
+.active{
 }
 
 @keyframes wave {
