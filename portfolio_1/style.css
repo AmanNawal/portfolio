@@ -188,11 +188,16 @@ li > a:hover, li > a:focus{
         margin: 0 auto;
     }
 
+    main > .tech {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
 }
 
 .introduction{
     display: flex;
-    margin: 1rem;
+    margin: 4rem 1rem;
     border : 0.5px solid grey;
     box-shadow: 0 4px 8px 0 #333;
     border-radius: 5px;
@@ -324,13 +329,27 @@ li > a:hover, li > a:focus{
     background-image: linear-gradient(whitesmoke,skyblue);
 }
 
+.my-skills{
+    margin:12rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-skills > h1{
+    
+    margin-bottom: 1rem;
+}
+
 .tech{
 
     display: grid;
     grid-template-columns: auto auto;
     row-gap: 2rem;
     width: 70%;
-    margin: 4rem auto;
+    margin: 1rem auto;
+    place-items: center;
 
 }
 
@@ -390,6 +409,29 @@ li > a:hover, li > a:focus{
     width: 65%;
     height:0.899rem;
     border-radius: 521312px;
+}
+
+.education{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+
+
+
+.education > .education-card{
+    border: 3px solid #333;
+    margin: 1rem 0;
+    width: 50%;
+}
+
+
+
+.education-card > .education-description{
+  display: block;
+ 
 }
 
 @keyframes wave {

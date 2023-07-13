@@ -39,3 +39,18 @@ const observerProgressBar = new IntersectionObserver((entries) => {
 
 /*Intersection Observer: is a browser API that allows you to determine when an element in the DOM enters the browser’s viewport.*/
 /*entries: is an array of objects that contain information about each observed element.*/
+
+function toggleEducation(element) {
+    var x = document.getElementById("edu");
+    
+    if(x.style.display === "none"){
+        x.style.display = "block";
+
+    }else{
+        x.style.display = "none";
+    }
+    
+ 
+  }
+  
+
